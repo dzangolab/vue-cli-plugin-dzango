@@ -8,11 +8,7 @@
     "url": "git+https://github.com/vuejs/vue-cli.git",
     "directory": "packages/@vue/cli-plugin-babel"
   },
-  "keywords": [
-    "vue",
-    "cli",
-    "babel"
-  ],
+  "keywords": ["vue", "cli", "babel"],
   "author": "Dzango Technologies Limited",
   "license": "MIT",
   "bugs": {
@@ -31,7 +27,8 @@
     "eslint-plugin-vue": "^6.2.2",
     "eslint-plugin-vue-libs": "^4.0.0",
     "husky": "^7.0.4",
-    "prettier": "^2.4.1"
+    "prettier": "^2.4.1",
+    "shipjs": "0.24.0"
   },
   "publishConfig": {
     "access": "public"
@@ -51,6 +48,7 @@
     "prepublishOnly": "npx sort-package-json && yarn run lint",
     "release:prepare": "shipjs prepare",
     "release:trigger": "shipjs trigger",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "release": "shipjs prepare"
   }
 }
