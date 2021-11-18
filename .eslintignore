@@ -1,0 +1,7 @@
+node_modules
+templates
+templates-vue3
+client-addon
+client-addon-dist
+client-addon-dist/index.js
+client-addon/.eslintrc.js
