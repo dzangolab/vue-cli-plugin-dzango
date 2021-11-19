@@ -2,21 +2,38 @@
   "name": "@dzangolab/vue-cli-plugin-dzango",
   "version": "0.1.0",
   "description": "Vue cli plugin for bootstrapping a vuejs app",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vuejs/vue-cli.git",
-    "directory": "packages/@vue/cli-plugin-babel"
-  },
-  "keywords": ["vue", "cli", "babel"],
-  "author": "Dzango Technologies Limited",
-  "license": "MIT",
+  "keywords": [
+    "cli",
+    "dzango",
+    "vue",
+    "vue3"
+  ],
+  "homepage": "https://github.com/dzangolab/vue-cli-plugin-dzango#readme",
   "bugs": {
     "url": "https://github.com/dzangolab/vue-cli-plugin-dzango"
   },
-  "homepage": "https://github.com/dzangolab/vue-cli-plugin-dzango#readme",
-  "peerDependencies": {
-    "@vue/cli-service": "^3.0.0 || ^4.0.0-0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dzangolab/vue-cli-plugin-dzango.git"
+  },
+  "license": "MIT",
+  "author": "Dzango Technologies Limited",
+  "main": "index.js",
+  "scripts": {
+    "clean": "npm-run-all --parallel clean:*",
+    "clean:cache": "jest --clearCache",
+    "clean:test": "rimraf coverage tests/e2e/projects/*",
+    "fix": "npm-run-all --parallel lint:fix format:fix",
+    "format": "prettier --config .prettierrc --ignore-path .prettierignore '**/*.{js,json,html}'",
+    "format:fix": "yarn format --write",
+    "lint": "eslint . ./generator --ext .js",
+    "lint:fix": "yarn lint --fix",
+    "prepare": "husky install",
+    "prepublishOnly": "npx sort-package-json && yarn run lint",
+    "release": "shipjs prepare",
+    "release:prepare": "shipjs prepare",
+    "release:trigger": "shipjs trigger",
+    "sort-package": "npx sort-package-json"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.2",
@@ -30,25 +47,13 @@
     "prettier": "^2.4.1",
     "shipjs": "0.24.0"
   },
-  "publishConfig": {
-    "access": "public"
+  "peerDependencies": {
+    "@vue/cli-service": "^3.0.0 || ^4.0.0-0"
   },
   "engines": {
     "node": ">= 14"
   },
-  "scripts": {
-    "clean": "npm-run-all --parallel clean:*",
-    "clean:cache": "jest --clearCache",
-    "clean:test": "rimraf coverage tests/e2e/projects/*",
-    "fix": "npm-run-all --parallel lint:fix format:fix",
-    "format": "prettier --config .prettierrc --ignore-path .prettierignore '**/*.{js,json,html}'",
-    "format:fix": "yarn format --write",
-    "lint": "eslint . ./generator --ext .js",
-    "lint:fix": "yarn lint --fix",
-    "prepublishOnly": "npx sort-package-json && yarn run lint",
-    "release:prepare": "shipjs prepare",
-    "release:trigger": "shipjs trigger",
-    "prepare": "husky install",
-    "release": "shipjs prepare"
+  "publishConfig": {
+    "access": "public"
   }
 }
