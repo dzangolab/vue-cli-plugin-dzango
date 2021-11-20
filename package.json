@@ -2,12 +2,7 @@
   "name": "@dzangolab/vue-cli-plugin-dzango",
   "version": "0.1.0",
   "description": "Vue cli plugin for bootstrapping a vuejs app",
-  "keywords": [
-    "cli",
-    "dzango",
-    "vue",
-    "vue3"
-  ],
+  "keywords": ["cli", "dzango", "vue", "vue3"],
   "homepage": "https://github.com/dzangolab/vue-cli-plugin-dzango#readme",
   "bugs": {
     "url": "https://github.com/dzangolab/vue-cli-plugin-dzango"
