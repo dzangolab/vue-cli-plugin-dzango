@@ -1,6 +1,6 @@
 {
   "name": "@dzangolab/vue-cli-plugin-dzango",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Vue cli plugin for bootstrapping a vuejs app",
   "keywords": [
     "cli",
