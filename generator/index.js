@@ -1,6 +1,8 @@
-module.exports = api => {
+module.exports = (api, options) => {
   try {
     api.extendPackage({
+      name: options.appName,
+      version: options.appVersion,
       dependencies: {
         'core-js': '3.19.1',
         'normalize-css': '2.3.1',
@@ -48,6 +50,8 @@ module.exports = api => {
         node: '>= 14'
       }
     })
+
+    api.render('./templates', options)
   } catch (e) {
     api.exitLog(
       `Unexpected error in vue-cli-plugin-dzango: ${e.message}`,
