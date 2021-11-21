@@ -1,3 +1,7 @@
+## [0.1.3](https://github.com/dzangolab/vue-cli-plugin-dzango/compare/v0.1.2...v0.1.3) (2021-11-21)
+
+
+
 ## 0.1.2 (2021-11-20)
 
 
