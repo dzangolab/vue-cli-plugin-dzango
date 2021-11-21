@@ -1,6 +1,10 @@
 ## [0.1.3](https://github.com/dzangolab/vue-cli-plugin-dzango/compare/v0.1.2...v0.1.3) (2021-11-21)
 
+### Features
 
+* generate README and utility package configuration files
+* prompt user for app name and versio 
+* read default appName and appversion values from package.json
 
 ## 0.1.2 (2021-11-20)
 
