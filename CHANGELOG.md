@@ -3,7 +3,7 @@
 
 ### Bug Fixes
 
-* udpate dependencies ([2764c16](https://github.com/dzangolab/vue-cli-plugin-dzango/commit/2764c1695dac645975989089d1dd5b9aee0a68b4))
+* update dependencies ([2764c16](https://github.com/dzangolab/vue-cli-plugin-dzango/commit/2764c1695dac645975989089d1dd5b9aee0a68b4))
 
 
 
