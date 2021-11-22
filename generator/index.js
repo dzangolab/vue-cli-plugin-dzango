@@ -7,7 +7,7 @@ module.exports = (api, options) => {
         'core-js': '3.19.1',
         'normalize-css': '2.3.1',
         'register-service-worker': '1.7.1',
-        'vue': '^3.2.22',
+        'vue': '3.2.22',
         'vue-router': '4.0.12',
         'vuex': '4.0.2'
       },
