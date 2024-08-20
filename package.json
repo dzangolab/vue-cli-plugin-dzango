@@ -46,7 +46,7 @@
     "eslint-plugin-vue-libs": "4.0.0",
     "husky": "7.0.4",
     "prettier": "2.5.1",
-    "shipjs": "0.24.3"
+    "shipjs": "0.26.4"
   },
   "peerDependencies": {
     "@vue/cli-service": "^3.0.0 || ^4.0.0-0"
